@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;700&display=swap');
+
+body {
+    font-family: 'Kantumruy Pro', sans-serif;
+    background-color: #f9fafb;
+}
+
+.card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.label-text {
+    font-size: 0.7rem;
+    color: #6b7280;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.stat-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.guest-summary-card {
+    background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.3);
+}
+
+.search-bar {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    outline: none;
+    transition: ring 0.2s;
+}
+
+.search-bar:focus {
+    border-color: #f472b6;
+    box-shadow: 0 0 0 2px rgba(244, 114, 182, 0.2);
+}
+
+.fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 64px;
+    height: 64px;
+    background: #db2777;
+    color: white;
+    border-radius: 50%;
+    font-size: 2rem;
+    box-shadow: 0 10px 25px -5px rgba(219, 39, 119, 0.5);
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 40;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 50;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-field {
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    outline: none;
+}
+
+.btn-primary {
+    width: 100%;
+    background: #db2777;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #be185d;
+}
+
+.guest-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #f472b6;
+}

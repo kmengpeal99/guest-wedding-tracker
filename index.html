@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Guest Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-4 max-w-md mx-auto">
+
+    <header class="flex justify-between items-center mb-6">
+        <div>
+            <h1 class="text-2xl font-bold text-gray-800">កម្រងបញ្ជីចំណងដៃ</h1>
+            <p class="text-gray-400 text-sm">14 April 2026</p>
+        </div>
+        <div class="bg-pink-100 p-2 rounded-full text-xl shadow-sm">💕</div>
+    </header>
+
+    <div class="grid grid-cols-2 gap-4 mb-4">
+        <div class="card p-4">
+            <p class="label-text">$ TOTAL USD</p>
+            <h2 class="stat-value text-green-600" id="totalUSD">$0</h2>
+        </div>
+        <div class="card p-4">
+            <p class="label-text">៛ TOTAL KHR</p>
+            <h2 class="stat-value text-blue-600" id="totalKHR">0៛</h2>
+        </div>
+    </div>
+
+    <div class="guest-summary-card p-6 flex justify-between items-center mb-6 text-white">
+        <div>
+            <p class="text-xs opacity-80 uppercase">Total Guests</p>
+            <h2 class="text-3xl font-bold" id="guestCount">0</h2>
+        </div>
+        <div class="text-3xl">👥</div>
+    </div>
+
+    <div class="relative mb-6">
+        <input type="text" id="searchInput" placeholder="ស្វែងរកឈ្មោះ..." class="search-bar shadow-sm">
+    </div>
+
+    <div id="guestList" class="space-y-3 pb-24">
+        <p class="text-center text-gray-400 mt-10">មិនមានទិន្នន័យទេ</p>
+    </div>
+
+    <button id="openModalBtn" class="fab">+</button>
+
+    <div id="modal" class="modal-overlay hidden">
+        <div class="modal-content shadow-2xl">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold text-gray-800">បន្ថែមភ្ញៀវថ្មី</h2>
+                <button id="closeModalBtn" class="text-gray-400 text-2xl hover:text-gray-600">&times;</button>
+            </div>
+            
+            <input id="nameInput" type="text" placeholder="បញ្ចូលឈ្មោះ..." class="input-field mb-4">
+            
+            <div class="flex gap-3 mb-6">
+                <input id="amountInput" type="number" placeholder="ចំនួនទឹកប្រាក់" class="input-field flex-1">
+                <select id="currencyInput" class="input-field w-24 bg-gray-50 font-bold">
+                    <option value="USD">USD</option>
+                    <option value="KHR">KHR</option>
+                </select>
+            </div>
+            
+            <button id="saveBtn" class="btn-primary">កត់ត្រាទុក</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
